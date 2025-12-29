@@ -62,6 +62,7 @@ Memory map with external flash adapter board:
     0xE000 - 0xFFFF                          ASIC (?)
 
   boot operation (boot pin high) and inst pin set:
+  
     µc                    flash              page reg in asic 0xE040(write) / 0xE041(read):
     
     0x0000 - 0x7FFF      0x00000 - 0x07FFF      x
