@@ -35,6 +35,7 @@ after a read or write ext flash operation something goes weird and the borad nee
 Memory map with external flash adapter board:
   normal operation (boot pin low) and inst pin set:
     µc                    flash              page reg in asic 0xE040(write) / 0xE041(read):
+    
     0x0000 - 0xBFFF      0x40000 - 0x4BFFF      x
     0xc000 - 0xfFFF      0x40000 - 0x43FFF      0x30
     0xc000 - 0xfFFF      0x44000 - 0x47FFF      0x31
