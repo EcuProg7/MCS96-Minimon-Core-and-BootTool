@@ -21,8 +21,8 @@ SCL4402:
 the asic needs some init values written to specific addresses to access ram and do paging on ext flash. Init is retreived from firmware binary.
 I don´t know if all are needed or what they are doing, it works. The asic is memory mapped starting at address 0xe000 with inst pin P5.1 low
 #scl44 init
+
     ret = SetByteAtAddress(ser, 0xe02f, 0x41)
-    
     ret &= SetByteAtAddress(ser, 0xe030, 0xa)
     ret &= SetByteAtAddress(ser, 0xe031, 0xf)
     ret &= SetByteAtAddress(ser, 0xe032, 0x88)
@@ -56,6 +56,7 @@ Memory map with external flash adapter board:
     0xc000 - 0xfFFF      0x7C000 - 0x7FFFF      0x3F
     
   both operations and inst pin reset:
+  
       µc
       
     0x0000 - 0xBFFF      0x40000 - 0x4BFFF    flash   
