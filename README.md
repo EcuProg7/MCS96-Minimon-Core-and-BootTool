@@ -30,7 +30,6 @@ I don´t know if all are needed or what they are doing, it works. The asic is me
     ret &= SetByteAtAddress(ser, 0xe040, 0x34)
     ret &= SetByteAtAddress(ser, 0xe01a, 0x3)
     ret &= SetByteAtAddress(ser, 0xe02c, 0x3d)
-after a read or write ext flash operation something goes weird and the borad needs to be restarted ?!?!
 
 Memory map with external flash adapter board:
   normal operation (boot pin low) and inst pin set:
