@@ -58,7 +58,7 @@ Memory map with external flash adapter board:
   
       µc
       
-    0x0000 - 0xBFFF      0x40000 - 0x4BFFF    flash   
+   
     0xc000 - 0xDFFF      0x0000 - 0x1FFF      ext RAM
     0xE000 - 0xFFFF                          ASIC (?)
 
